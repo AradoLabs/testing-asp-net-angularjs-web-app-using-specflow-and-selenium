@@ -1,0 +1,10 @@
+Calculator.Tests/Features/Division.feature.cs
+Calculator.Tests/Features/Add.feature.cs
+Calculator.Tests/Features/Multiplication.feature.cs
+Calculator.Tests/Features/Reduce.feature.cs
+Calculator.Tests/bin
+Calculator.Tests/obj
+Calculator/bin
+Calculator/obj
+packages
+.vs/config/applicationhost.config

@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Calculator";
+}
+@*<div class="page-header">
+    <h1>Calculator</h1>
+</div>*@
+
+<div ng-controller="CalculatorCtrl">
+    <form role="form">
+        <div class="row">
+            <div class="col-sm-2"><input type="number" ng-model="firstInput" class="form-control" id="firstInput"></div>
+            <div class="col-sm-2"><select id="operation" class="form-control" ng-model="selectedOperation" ng-options="o.name for o in operations"></select></div>
+            <div class="col-sm-2"><input type="number" ng-model="secondInput" class="form-control" id="secondInput"></div>
+            <div class="col-sm-1"><button type="submit" class="btn btn-primary" ng-click="calculate()" ng-disabled="isCalculationDisabled()" id="calculate">=</button></div>
+            <div class="col-sm-5" id="result">{{ result }}</div>
+        </div>
+    </form>
+</div>
+
+
