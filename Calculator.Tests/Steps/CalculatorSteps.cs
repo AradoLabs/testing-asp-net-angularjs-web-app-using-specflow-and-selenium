@@ -17,8 +17,7 @@ namespace Calculator.Tests.Steps
         [Given(@"I have entered (.*) and (.*) into the calculator")]
         public void GivenIHaveGivenAndIntoTheCalculator(string firstInput, string secondInput)
         {
-            CalculatorPage.TypeFirstInput(firstInput)
-                .TypeSecondInput(secondInput);
+            CalculatorPage.TypeFirstInput(firstInput).TypeSecondInput(secondInput);
         }
 
         [When(@"I calculate")]
